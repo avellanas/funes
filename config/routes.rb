@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  resources :issues
+
+  resources :work_types
+
+  resources :splash_splices
+
+  resources :pieces
+
+  resources :current_issues
+
+  resources :color_schemes
+
+  resources :clearances
+
+  resources :author_pieces
+
+  resources :authors
+
+  resources :art_splices
+
+  resources :arts
+
+  resources :announces
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

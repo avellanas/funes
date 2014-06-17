@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @issue.date %>
+</p>
+
+<p>
+  <strong>Color-scheme-id:</strong>
+  <%= @issue.color-scheme-id %>
+</p>
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>

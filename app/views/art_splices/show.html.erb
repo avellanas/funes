@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Art:</strong>
+  <%= @art_splice.art_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @art_splice.order %>
+</p>
+
+<p>
+  <strong>Path:</strong>
+  <%= @art_splice.path %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @art_splice.text %>
+</p>
+
+<%= link_to 'Edit', edit_art_splice_path(@art_splice) %> |
+<%= link_to 'Back', art_splices_path %>

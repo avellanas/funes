@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @announce.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @announce.text %>
+</p>
+
+<p>
+  <strong>Popup:</strong>
+  <%= @announce.popup %>
+</p>
+
+<p>
+  <strong>Window height:</strong>
+  <%= @announce.window_height %>
+</p>
+
+<p>
+  <strong>Window width:</strong>
+  <%= @announce.window_width %>
+</p>
+
+<p>
+  <strong>Expiration:</strong>
+  <%= @announce.expiration %>
+</p>
+
+<%= link_to 'Edit', edit_announce_path(@announce) %> |
+<%= link_to 'Back', announces_path %>

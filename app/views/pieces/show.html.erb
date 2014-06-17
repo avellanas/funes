@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Issue num:</strong>
+  <%= @piece.issue_num %>
+</p>
+
+<p>
+  <strong>Page:</strong>
+  <%= @piece.page %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @piece.type_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @piece.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @piece.subtitle %>
+</p>
+
+<p>
+  <strong>Exlibris:</strong>
+  <%= @piece.exlibris %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @piece.text %>
+</p>
+
+<p>
+  <strong>Footer:</strong>
+  <%= @piece.footer %>
+</p>
+
+<p>
+  <strong>Css:</strong>
+  <%= @piece.css %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @piece.parent_id %>
+</p>
+
+<p>
+  <strong>Child order:</strong>
+  <%= @piece.child_order %>
+</p>
+
+<%= link_to 'Edit', edit_piece_path(@piece) %> |
+<%= link_to 'Back', pieces_path %>

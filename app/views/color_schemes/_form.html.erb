@@ -1,0 +1,21 @@
+<%= form_for(@color_scheme) do |f| %>
+  <% if @color_scheme.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@color_scheme.errors.count, "error") %> prohibited this color_scheme from being saved:</h2>
+
+      <ul>
+      <% @color_scheme.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cssfile %><br>
+    <%= f.text_field :cssfile %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

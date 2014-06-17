@@ -1,0 +1,49 @@
+<%= form_for(@art) do |f| %>
+  <% if @art.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@art.errors.count, "error") %> prohibited this art from being saved:</h2>
+
+      <ul>
+      <% @art.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :issue %><br>
+    <%= f.number_field :issue %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :info %><br>
+    <%= f.text_field :info %>
+  </div>
+  <div class="field">
+    <%= f.label :is_splash %><br>
+    <%= f.text_field :is_splash %>
+  </div>
+  <div class="field">
+    <%= f.label :is_footer %><br>
+    <%= f.text_field :is_footer %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :au_id %><br>
+    <%= f.number_field :au_id %>
+  </div>
+  <div class="field">
+    <%= f.label :width %><br>
+    <%= f.text_field :width %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

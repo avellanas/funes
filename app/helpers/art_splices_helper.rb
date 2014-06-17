@@ -1,0 +1,2 @@
+module ArtSplicesHelper
+end

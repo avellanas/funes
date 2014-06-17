@@ -1,0 +1,41 @@
+<%= form_for(@announce) do |f| %>
+  <% if @announce.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@announce.errors.count, "error") %> prohibited this announce from being saved:</h2>
+
+      <ul>
+      <% @announce.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </div>
+  <div class="field">
+    <%= f.label :popup %><br>
+    <%= f.text_field :popup %>
+  </div>
+  <div class="field">
+    <%= f.label :window_height %><br>
+    <%= f.number_field :window_height %>
+  </div>
+  <div class="field">
+    <%= f.label :window_width %><br>
+    <%= f.number_field :window_width %>
+  </div>
+  <div class="field">
+    <%= f.label :expiration %><br>
+    <%= f.date_select :expiration %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

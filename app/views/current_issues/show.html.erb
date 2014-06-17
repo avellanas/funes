@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @current_issue.number %>
+</p>
+
+<%= link_to 'Edit', edit_current_issue_path(@current_issue) %> |
+<%= link_to 'Back', current_issues_path %>

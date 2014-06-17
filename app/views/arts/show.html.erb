@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Issue:</strong>
+  <%= @art.issue %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @art.title %>
+</p>
+
+<p>
+  <strong>Info:</strong>
+  <%= @art.info %>
+</p>
+
+<p>
+  <strong>Is splash:</strong>
+  <%= @art.is_splash %>
+</p>
+
+<p>
+  <strong>Is footer:</strong>
+  <%= @art.is_footer %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @art.type %>
+</p>
+
+<p>
+  <strong>Au:</strong>
+  <%= @art.au_id %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @art.width %>
+</p>
+
+<%= link_to 'Edit', edit_art_path(@art) %> |
+<%= link_to 'Back', arts_path %>

@@ -1,0 +1,29 @@
+<%= form_for(@author_piece) do |f| %>
+  <% if @author_piece.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@author_piece.errors.count, "error") %> prohibited this author_piece from being saved:</h2>
+
+      <ul>
+      <% @author_piece.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :au_id %><br>
+    <%= f.number_field :au_id %>
+  </div>
+  <div class="field">
+    <%= f.label :piece_id %><br>
+    <%= f.number_field :piece_id %>
+  </div>
+  <div class="field">
+    <%= f.label :role %><br>
+    <%= f.text_field :role %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

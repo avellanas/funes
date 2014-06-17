@@ -1,0 +1,61 @@
+<%= form_for(@piece) do |f| %>
+  <% if @piece.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@piece.errors.count, "error") %> prohibited this piece from being saved:</h2>
+
+      <ul>
+      <% @piece.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :issue_num %><br>
+    <%= f.number_field :issue_num %>
+  </div>
+  <div class="field">
+    <%= f.label :page %><br>
+    <%= f.number_field :page %>
+  </div>
+  <div class="field">
+    <%= f.label :type_id %><br>
+    <%= f.text_field :type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :subtitle %><br>
+    <%= f.text_field :subtitle %>
+  </div>
+  <div class="field">
+    <%= f.label :exlibris %><br>
+    <%= f.text_field :exlibris %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </div>
+  <div class="field">
+    <%= f.label :footer %><br>
+    <%= f.text_area :footer %>
+  </div>
+  <div class="field">
+    <%= f.label :css %><br>
+    <%= f.text_area :css %>
+  </div>
+  <div class="field">
+    <%= f.label :parent_id %><br>
+    <%= f.number_field :parent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :child_order %><br>
+    <%= f.number_field :child_order %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

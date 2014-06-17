@@ -1,0 +1,33 @@
+<h1>Listing splash_splices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Art</th>
+      <th>Order</th>
+      <th>Path</th>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @splash_splices.each do |splash_splice| %>
+      <tr>
+        <td><%= splash_splice.id %></td>
+        <td><%= splash_splice.art_id %></td>
+        <td><%= splash_splice.order %></td>
+        <td><%= splash_splice.path %></td>
+        <td><%= splash_splice.text %></td>
+        <td><%= link_to 'Show', splash_splice %></td>
+        <td><%= link_to 'Edit', edit_splash_splice_path(splash_splice) %></td>
+        <td><%= link_to 'Destroy', splash_splice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Splash splice', new_splash_splice_path %>

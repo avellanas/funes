@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Au:</strong>
+  <%= @author_piece.au_id %>
+</p>
+
+<p>
+  <strong>Piece:</strong>
+  <%= @author_piece.piece_id %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @author_piece.role %>
+</p>
+
+<%= link_to 'Edit', edit_author_piece_path(@author_piece) %> |
+<%= link_to 'Back', author_pieces_path %>

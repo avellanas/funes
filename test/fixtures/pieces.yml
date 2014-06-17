@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  issue_num: 1
+  page: 1
+  type_id: MyString
+  title: MyString
+  subtitle: MyString
+  exlibris: MyString
+  text: MyText
+  footer: MyText
+  css: MyText
+  parent_id: 1
+  child_order: 1
+
+two:
+  issue_num: 1
+  page: 1
+  type_id: MyString
+  title: MyString
+  subtitle: MyString
+  exlibris: MyString
+  text: MyText
+  footer: MyText
+  css: MyText
+  parent_id: 1
+  child_order: 1
