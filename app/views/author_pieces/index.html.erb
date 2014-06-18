@@ -16,9 +16,9 @@
         <td><%= author_piece.au_id %></td>
         <td><%= author_piece.piece_id %></td>
         <td><%= author_piece.role %></td>
-        <td><%= link_to 'Show', author_piece %></td>
-        <td><%= link_to 'Edit', edit_author_piece_path(author_piece) %></td>
-        <td><%= link_to 'Destroy', author_piece, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= link_to 'Show', author_piece %></td>
+        <td><%#= link_to 'Edit', edit_author_piece_path(author_piece) %></td>
+        <td><%#= link_to 'Destroy', author_piece, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Author piece', new_author_piece_path %>
+<%#= link_to 'New Author piece', new_author_piece_path %>

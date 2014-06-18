@@ -12,9 +12,9 @@
     <% @current_issues.each do |current_issue| %>
       <tr>
         <td><%= current_issue.number %></td>
-        <td><%= link_to 'Show', current_issue %></td>
-        <td><%= link_to 'Edit', edit_current_issue_path(current_issue) %></td>
-        <td><%= link_to 'Destroy', current_issue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= link_to 'Show', current_issue %></td>
+        <td><%#= link_to 'Edit', edit_current_issue_path(current_issue) %></td>
+        <td><%#= link_to 'Destroy', current_issue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Current issue', new_current_issue_path %>
+<%#= link_to 'New Current issue', new_current_issue_path %>

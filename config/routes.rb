@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+
+  root  'static_pages#home'
   resources :issues
 
   resources :work_types
@@ -13,7 +16,8 @@ Rails.application.routes.draw do
 
   resources :clearances
 
-  resources :author_pieces
+  resources :author_pieces, only: [:index]
+  match 'author_pieces/:au_id/:piece_id', to: 'author_pieces#show', via: 'show'
 
   resources :authors
 
